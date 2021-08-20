@@ -5,9 +5,9 @@ class Restaurant {
 	public:
 		void SetName(std::string restaurantName) { this->name = restaurantName; }
 		void SetRating(int userRating) { this->rating = userRating; }
-		void print();
+		void print() { std::cout << "name " << this->name << "\nrating= " << this->rating << std::endl; }
 
-	private:
+private:
 		std::string name;
 		int rating;
 
